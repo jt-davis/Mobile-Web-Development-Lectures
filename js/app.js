@@ -8,11 +8,11 @@ if ("serviceWorker" in navigator) {
 			.register("/sw.js")
 			.then((reg) => {
 				// Display a success message
-				console.log("Service Worker registration (Scope: ${reg.scope})");
+				console.log(`Service Worker registration (Scope: ${reg.scope})`);
 			})
 			.catch((error) => {
 				// Display an error message
-				console.log("Service Worker Error (${error})");
+				console.log(`Service Worker Error (${error})`);
 			});
 	});
 } else {
